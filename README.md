@@ -17,7 +17,7 @@ Open **http://localhost:8000**. Stop the server with Ctrl+C. You can also open `
 - `index.html`: introduction, photo placeholder, About, quote, and page highlights.
 - `writing.html`: filterable writing index.
 - `writing/first-entry.html`: reusable essay template, clearly marked as placeholder content.
-- `publications.html`: publications, research, and professional updates.
+- `publications.html`: Research page, ordered as research, professional updates, and publications. The filename is retained for existing links.
 - `pictures.html`: gallery with category filters and abstract CSS placeholders.
 - `teaching.html`: future teaching space.
 - `contact.html`: email placeholder; no address included.
@@ -102,3 +102,7 @@ Copy an existing root-level HTML file, edit the title and main content, then add
 ## GitHub Pages
 
 This folder is the publishable website. There is no build step. All site links are relative, supporting both user and project Pages sites. When you are ready, manage Git and configure GitHub Pages yourself to serve the appropriate branch and root directory. No commits, pushes, branch changes, or deployment are part of this implementation.
+
+Navigation stays visible above 780px; smaller screens use a collapsible menu when JavaScript is available. The navigation order is Home, Research, CV, Writing, Pictures, Teaching, Media, Contact.
+
+The desktop header includes a noninteractive Menu label beside the visible navigation. On screens up to 780px, JavaScript enables the Menu button and collapsible links. Without JavaScript, links stay visible. Sage and peach complement the pink and blue palette; decorative stars have been removed throughout.
