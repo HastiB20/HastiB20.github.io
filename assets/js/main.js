@@ -3,24 +3,33 @@ document.documentElement.classList.add('js');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 if (menuButton && navigation) {
-  menuButton.hidden = false;
+  const phoneLayout = window.matchMedia('(max-width: 600px)');
+  const menuLabel = document.querySelector('.menu-label');
   const closeMenu = () => {
     menuButton.setAttribute('aria-expanded', 'false');
-    navigation.classList.remove('is-open');
+    navigation.hidden = phoneLayout.matches;
   };
+  const syncNavigation = () => {
+    menuButton.hidden = !phoneLayout.matches;
+    if (menuLabel) menuLabel.hidden = phoneLayout.matches;
+    closeMenu();
+  };
+  syncNavigation();
+  phoneLayout.addEventListener('change', syncNavigation);
   menuButton.addEventListener('click', () => {
+    if (!phoneLayout.matches) return;
     const expanded = menuButton.getAttribute('aria-expanded') === 'true';
     menuButton.setAttribute('aria-expanded', String(!expanded));
-    navigation.classList.toggle('is-open', !expanded);
+    navigation.hidden = expanded;
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    if (event.key === 'Escape' && phoneLayout.matches && !navigation.hidden) {
       closeMenu();
       menuButton.focus();
     }
   });
   navigation.addEventListener('click', (event) => {
-    if (event.target.closest('a')) closeMenu();
+    if (event.target.closest('a') && phoneLayout.matches) closeMenu();
   });
 }
 for (const group of document.querySelectorAll('[data-filter-group]')) {

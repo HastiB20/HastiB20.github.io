@@ -103,6 +103,6 @@ Copy an existing root-level HTML file, edit the title and main content, then add
 
 This folder is the publishable website. There is no build step. All site links are relative, supporting both user and project Pages sites. When you are ready, manage Git and configure GitHub Pages yourself to serve the appropriate branch and root directory. No commits, pushes, branch changes, or deployment are part of this implementation.
 
-Navigation stays visible above 780px; smaller screens use a collapsible menu when JavaScript is available. The navigation order is Home, Research, CV, Writing, Pictures, Teaching, Media, Contact.
+Navigation stays visible above 600px; smaller screens use a collapsible menu when JavaScript is available. The navigation order is Home, Research, CV, Writing, Pictures, Teaching, Media, Contact.
 
-The desktop header includes a noninteractive Menu label beside the visible navigation. On screens up to 780px, JavaScript enables the Menu button and collapsible links. Without JavaScript, links stay visible. Sage and peach complement the pink and blue palette; decorative stars have been removed throughout.
+The desktop header includes a noninteractive Menu label beside the visible navigation. On screens up to 600px, JavaScript enables the Menu button and collapsible links. Without JavaScript, links stay visible. Selected headings and links use soft blue alongside the pink and ivory palette; decorative stars have been removed throughout.
