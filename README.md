@@ -1,6 +1,6 @@
 # A personal website
 
-A buildless, responsive website for academic work, writing, and personal interests. Soft editorial styling in ivory, dusty pink, and muted blue. No dependencies, remote fonts, analytics, forms, or external services.
+A buildless, responsive website for academic work, writing, and personal interests. Light editorial styling with warm ivory, champagne gold, soft silver, restrained rose accents, and elegant system-serif headings. No dependencies, remote fonts, analytics, forms, or external services.
 
 ## Preview locally
 
