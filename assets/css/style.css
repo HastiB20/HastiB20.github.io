@@ -1804,3 +1804,63 @@ h1 em,h2 em {
   font-size: 15px;
   letter-spacing: .015em;
 }
+
+/* Align both edges of prose while keeping the final line naturally spaced. */
+.lede,
+.about-body > p,
+.article-body > p,
+.publication-entry > p,
+.empty-panel > p,
+.publication-section > p,
+.writing-row > div > p,
+.explore-card > p,
+.contact-aside > p,
+.coming-soon > p:not(.eyebrow) {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: start;
+  hyphens: auto;
+}
+
+/* Narrow screens read more comfortably without stretched word spacing. */
+@media (max-width: 600px) {
+  .lede,
+  .about-body > p,
+  .article-body > p,
+  .publication-entry > p,
+  .empty-panel > p,
+  .publication-section > p,
+  .writing-row > div > p,
+  .explore-card > p,
+  .contact-aside > p,
+  .coming-soon > p:not(.eyebrow) {
+    text-align: start;
+  }
+}
+
+/* Research topics: a distinct surface for each field, with compact spacing. */
+#research .research-topic {
+  margin-top: 12px;
+  padding: 27px;
+  border-radius: 4px;
+}
+
+#research .research-topic--public-health {
+  background: var(--blue);
+}
+
+#research .research-topic--cognition {
+  background: #efc2d5;
+}
+
+#research .research-topic--causal {
+  background: #dce5d8;
+}
+
+#research .research-topic--ai {
+  background: #e1dcef;
+}
+
+#research .research-topic--methods {
+  background: #e1e5e9;
+}

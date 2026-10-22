@@ -17,7 +17,7 @@ Open **http://localhost:8000**. Stop the server with Ctrl+C. You can also open `
 - `index.html`: introduction, photo placeholder, About, quote, and page highlights.
 - `writing.html`: filterable writing index.
 - `writing/first-entry.html`: reusable essay template, clearly marked as placeholder content.
-- `publications.html`: Research page, ordered as research, professional updates, and publications. The filename is retained for existing links.
+- `research.html`: Research page, ordered as research, professional updates, and publications.
 - `pictures.html`: gallery with category filters and abstract CSS placeholders.
 - `teaching.html`: future teaching space.
 - `contact.html`: email placeholder; no address included.
@@ -63,7 +63,7 @@ All entries stay visible if JavaScript is disabled. Filters are only shown when 
 
 ### Publications and updates
 
-Duplicate `.publication-entry` in `publications.html`. Replace the placeholder with the title, authors, year, venue, and summary. Replace the disabled link span with a real anchor only when you have a URL:
+Duplicate `.publication-entry` in `research.html`. Replace the placeholder with the title, authors, year, venue, and summary. Replace the disabled link span with a real anchor only when you have a URL:
 
 ```html
 <a class="text-link" href="YOUR_PUBLICATION_URL">Read publication ↗</a>
