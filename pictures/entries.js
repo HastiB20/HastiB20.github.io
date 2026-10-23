@@ -4,12 +4,12 @@
 // Any category name works; its filter button is created automatically.
 // Use double quotes for text containing an apostrophe, as in the example.
 window.pictureEntries = [
-  /*
+
   {
-    file: 'my-photo.jpg',
-    caption: "A day's little details",
-    category: 'Everyday',
-    alt: 'Describe what is visible in the photo.',
+    file: 'HealthcareWeekLuxembourg.png',
+    caption: "Healthcare Week Luxembourg - September 2026",
+    category: 'Events',
+    alt: '',
   },
-  */
+
 ];
