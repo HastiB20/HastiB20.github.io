@@ -1441,7 +1441,7 @@ em {
   margin-left: auto;
   border-left: 1px solid var(--line);
   padding-left: 22px;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--muted);
@@ -1801,7 +1801,7 @@ h1 em,h2 em {
 
 #navigation a {
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: .015em;
 }
 
@@ -1871,4 +1871,13 @@ h1 em,h2 em {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Keep professional updates the same size as the Research topic paragraphs. */
+#updates > p {
+  font-size: 14px;
+}
+
+/* Enlarge the phone Menu control alongside the desktop navigation labels. */
+.menu-toggle {
+  font-size: 17px;
 }
