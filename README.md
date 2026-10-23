@@ -16,7 +16,9 @@ Open **http://localhost:8000**. Stop the server with Ctrl+C. You can also open `
 
 - `index.html`: introduction, photo placeholder, About, quote, and page highlights.
 - `writing.html`: filterable writing index.
-- `writing/first-entry.html`: reusable essay template, clearly marked as placeholder content.
+- `writing/entries.js`: add and edit all essays, poems, reflections, and other writings here.
+- `writing/entry.html`: shared reading page; no need to edit it.
+- `writing/first-entry.html`: original unused essay template, kept for reference.
 - `research.html`: Research page, ordered as research, professional updates, and publications.
 - `pictures.html`: gallery with category filters and abstract CSS placeholders.
 - `teaching.html`: future teaching space.
@@ -52,14 +54,40 @@ Add this rule to the stylesheet:
 
 Choose meaningful alt text and adjust the crop as needed.
 
-### New writing
+### Add an essay, poem, or reflection
 
-1. Copy `writing/first-entry.html` to `writing/your-title.html`.
-2. Replace the title, description, metadata, and article content; remove placeholder labels.
-3. Duplicate a `.writing-row` article in `writing.html` and point its title link to your new file.
-4. Set `data-category="essay"` or `data-category="reflection"` for filtering. To add a category, add a matching filter button with `aria-pressed="false"` and the same `data-filter` value.
+You only need to edit **`writing/entries.js`**. No HTML changes or extra commands are needed.
 
-All entries stay visible if JavaScript is disabled. Filters are only shown when JavaScript is available.
+1. Open `writing/entries.js` and copy this block inside the square brackets, above any existing pieces:
+
+```js
+  {
+    id: 'a-quiet-morning',
+    title: 'A quiet morning',
+    category: 'Poem',
+    date: 'October 2026',
+    intro: 'A few lines about the start of a day.',
+    text: `The first line of your poem
+The second line of your poem
+
+A new stanza starts after a blank line.`,
+  },
+```
+
+2. Replace the example words with your own, save the file, and publish your changes as usual. The example already commented out in the file is also available to copy; remove its surrounding `/*` and `*/` to use it.
+
+That is all. The Writing page, links, and category buttons update automatically. Pieces appear in the order you put them in the file, so put the newest first.
+
+- **id:** a unique address for the piece, using lowercase letters, numbers, and hyphens. Keep it unchanged after publishing so existing links still work.
+- **title:** the title shown on the website.
+- **category:** `Essay`, `Poem`, `Reflection`, or another category name of your choice. New categories get their own filter automatically.
+- **date:** the date as you want it displayed, such as `October 2026`.
+- **intro:** a short description. Use `''` to leave it empty.
+- **text:** paste your full writing between the two backticks. Blank lines separate paragraphs or stanzas; single line breaks are preserved. Write plain text, with no HTML needed.
+
+Keep the punctuation around each field and the comma after each piece. If a title or introduction contains an apostrophe, use double quotes around that field, for example `title: "A poet's morning"`. In the full text, write a backtick as `` \` `` and a literal `${` as `\${`.
+
+To edit a piece, change its block. To remove one, delete its entire block from `{` through `},`. You do not need to create or delete any HTML pages. Preview with the local server described above, or by opening `writing.html` in your browser. The writing collection requires JavaScript; the other pages are unchanged.
 
 ### Publications and updates
 
