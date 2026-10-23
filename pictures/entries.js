@@ -28,4 +28,20 @@ window.pictureEntries = [
     alt: '',
   },
 
+
+         {
+    file: 'IranMunich-2026.jpg',
+    caption: "For January 2026 - Munich, February 2026",
+    category: 'Actions',
+    alt: '',
+  }, 
+
+        {
+    file: 'WalkingInOberkorn-2025.png',
+    caption: "Walking in Oberkorn - Oberkorn, May 2025",
+    category: 'Daily Life',
+    alt: '',
+  },
+
+
 ];
