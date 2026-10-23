@@ -36,16 +36,29 @@
         <h1>The longer <em>story.</em></h1>
       </section>
       <section class="container section-bottom">
-        <div class="cv-toolbar"><span>Curriculum vitae</span><span class="content-note">[Last updated: October 2026]</span></div>
-        <div class="cv-placeholder">
-          <span class="document-icon" aria-hidden="true">≡</span>
-          <p class="content-note">CV</p>
-        </div>
-        <!-- Replace the .cv-placeholder div above with:
-<object class="cv-viewer" data="assets/cv/cv.pdf#toolbar=0" type="application/pdf" aria-label="Curriculum vitae PDF"><p>Your browser cannot display this PDF. <a href="assets/cv/cv.pdf">Open the CV</a>.</p></object>
-<p class="content-note"><a href="assets/cv/cv.pdf">Open CV in a separate tab</a></p>
--->
-      </section>
+  <div class="cv-toolbar">
+    <span>Curriculum vitae</span>
+    <span class="content-note">Last updated: October 2026</span>
+  </div>
+
+  <object
+    class="cv-viewer"
+    data="assets/cv/cv.pdf#toolbar=0"
+    type="application/pdf"
+    aria-label="Curriculum vitae PDF"
+  >
+    <p>
+      Your browser cannot display this PDF.
+      <a href="assets/cv/cv.pdf">Open the CV</a>.
+    </p>
+  </object>
+
+  <p class="content-note">
+    <a href="assets/cv/cv.pdf" target="_blank" rel="noopener">
+      Open CV in a separate tab
+    </a>
+  </p>
+</section>
     </main>
     <footer class="site-footer">
       <div>
