@@ -694,6 +694,13 @@ em {
   margin: 0;
 }
 
+.gallery-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
 .gallery-placeholder {
   height: 290px;
   position: relative;

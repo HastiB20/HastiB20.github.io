@@ -20,7 +20,8 @@ Open **http://localhost:8000**. Stop the server with Ctrl+C. You can also open `
 - `writing/entry.html`: shared reading page; no need to edit it.
 - `writing/first-entry.html`: original unused essay template, kept for reference.
 - `research.html`: Research page, ordered as research, professional updates, and publications.
-- `pictures.html`: gallery with category filters and abstract CSS placeholders.
+- `pictures.html`: gallery with automatic category filters.
+- `pictures/entries.js`: add and edit picture filenames, captions, and categories here.
 - `teaching.html`: future teaching space.
 - `contact.html`: email placeholder; no address included.
 - `cv.html`: PDF placeholder with a ready-to-enable viewer.
@@ -97,16 +98,32 @@ Duplicate `.publication-entry` in `research.html`. Replace the placeholder with 
 <a class="text-link" href="YOUR_PUBLICATION_URL">Read publication ↗</a>
 ```
 
-### Pictures
+### Add a picture
 
-Store optimized photos in `assets/images/`. In each gallery figure, replace the `.gallery-placeholder` div with:
+Only two things are needed: save the photo, then add its details in **`pictures/entries.js`**. No HTML or CSS editing and no extra commands are needed.
 
-```html
-<img class="gallery-photo" src="assets/images/your-photo.jpg"
-     alt="Describe what the photo shows" width="900" height="1100" loading="lazy">
+1. Save your photo in **`assets/images/`**, for example `my-photo.jpg`.
+2. Open **`pictures/entries.js`** and copy this block inside the square brackets:
+
+```js
+  {
+    file: 'my-photo.jpg',
+    caption: "A day's little details",
+    category: 'Everyday',
+    alt: 'A cup of tea beside an open notebook.',
+  },
 ```
 
-Add `.gallery-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }` to the stylesheet. Edit the caption and `data-category` (`everyday`, `places`, or `hobbies`). Duplicate a figure to add more photos. Abstract artwork in the starting gallery is explicitly labeled as placeholder imagery.
+Replace the example with your details, save, and publish your changes as usual. A commented example is also provided in the file; remove its surrounding `/*` and `*/` to use it.
+
+- **file:** your photo's exact filename, including its extension and matching capital letters. Do not add `assets/images/` here. Use a browser-friendly image such as JPG, PNG, or WebP; convert HEIC photos first.
+- **caption:** the words shown below the picture.
+- **category:** `Everyday`, `Places`, `Hobbies`, or any name you like. The filter button is created automatically.
+- **alt:** a short description of what the picture shows, for visitors using screen readers.
+
+Pictures appear in the order of the blocks. **Put a new block above the existing ones to show it at the top.** Keep the comma after each block. Use double quotes if your caption or description contains an apostrophe, as in the example.
+
+To change a caption or category, edit its block. To remove a picture from the page, delete its block from `{` through `},`; you can keep the image file if you still use it elsewhere. You never need to edit `pictures.html`. Photos are sized and cropped automatically to fit the gallery. The gallery requires JavaScript.
 
 ### Contact and profile links
 
