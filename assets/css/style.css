@@ -1881,3 +1881,44 @@ h1 em,h2 em {
 .menu-toggle {
   font-size: 17px;
 }
+
+/* Editorial framing: asymmetric ink corners with a fine gold seam. */
+.site-header {
+  position: relative;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: clamp(70px, 12vw, 170px);
+  height: 2px;
+  background: #171717;
+  box-shadow: 38px 4px 0 -0.5px #b49348;
+  pointer-events: none;
+}
+
+.site-footer {
+  position: relative;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: clamp(70px, 12vw, 170px);
+  height: 2px;
+  background: #171717;
+  box-shadow: -38px -4px 0 -0.5px #b49348;
+  pointer-events: none;
+}
+
+/* Align the copyright notice along both edges without stretching final lines. */
+.copyright-notice > p {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+  hyphens: auto;
+}
