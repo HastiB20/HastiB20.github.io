@@ -37,7 +37,7 @@
       </section>
       <section class="container section-bottom">
         <div class="media-list">
-          <div class="media-row">
+          <div class="media-row" data-media="linkedin">
             <span class="media-icon" aria-hidden="true">in</span>
             <div>
               <h2>LinkedIn</h2>
@@ -45,22 +45,22 @@
             </div>
             <span class="pill">Link to be added</span>
           </div>
-          <div class="media-row">
-            <span class="media-icon youtube" aria-hidden="true">▷</span>
+          <div class="media-row" data-media="youtube">
+            <span class="media-icon youtube" aria-hidden="true">yt</span>
             <div>
               <h2>YouTube</h2>
               <p>A place for videos and shared ideas.</p>
             </div>
             <span class="pill">Link to be added</span>
           </div>
-          <!-- <div class="media-row"> -->
-            <!-- <span class="media-icon other" aria-hidden="true">↗</span> -->
-            <!-- <div> -->
-              <!-- <h2>[Another profile]</h2> -->
-              <!-- <p>[Add a platform and a short description.]</p> -->
-            <!-- </div> -->
-            <!-- <span class="pill">Link to be added</span> -->
-          <!-- </div> -->
+          <div class="media-row" data-media="github">
+            <span class="media-icon" aria-hidden="true">gh</span>
+            <div>
+              <h2>GitHub</h2>
+              <p>Codes, projects, and contributions.</p>
+            </div>
+            <span class="pill">Link to be added</span>
+          </div>
         </div>
       </section>
     </main>
@@ -71,5 +71,29 @@
       </div>
       <div class="footer-note">Made with smile. Always evolving.<a href="copyright.html">Copyright</a><a href="#main">Back to top ↑</a></div>
     </footer>
+    <script>
+      // Paste your full profile links between the quotes below, then save.
+      // Leave a link empty to keep its row inactive.
+      const mediaLinks = {
+        linkedin: 'https://www.linkedin.com/in/hastibargharariyan',
+        youtube: 'https://youtube.com/@hastibargharariyan?si=FS0T6mrCYKOpiwLy',
+        github: 'https://github.com/HastiB20'
+      };
+
+      for (const row of document.querySelectorAll('[data-media]')) {
+        const url = mediaLinks[row.dataset.media].trim();
+        if (!url) continue;
+        // Only activate web addresses, such as https://www.linkedin.com/in/your-name/.
+        if (!/^https?:\/\//i.test(url)) continue;
+        const link = document.createElement('a');
+        link.className = row.className;
+        link.href = url;
+        link.append(...row.childNodes);
+        const badge = link.querySelector('.pill');
+        badge.textContent = '↗';
+        badge.setAttribute('aria-hidden', 'true');
+        row.replaceWith(link);
+      }
+    </script>
   </body>
 </html>
