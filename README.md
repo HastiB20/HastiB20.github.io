@@ -123,7 +123,7 @@ Replace the example with your details, save, and publish your changes as usual. 
 
 Pictures appear in the order of the blocks. **Put a new block above the existing ones to show it at the top.** Keep the comma after each block. Use double quotes if your caption or description contains an apostrophe, as in the example.
 
-To change a caption or category, edit its block. To remove a picture from the page, delete its block from `{` through `},`; you can keep the image file if you still use it elsewhere. You never need to edit `pictures.html`. Photos are sized and cropped automatically to fit the gallery. The gallery requires JavaScript.
+To change a caption or category, edit its block. To remove a picture from the page, delete its block from `{` through `},`; you can keep the image file if you still use it elsewhere. You never need to edit `pictures.html`. Photos fit the gallery width while keeping their original proportions: the whole image is visible without cropping. Portrait and landscape photos will have different heights. The gallery requires JavaScript.
 
 ### Contact and profile links
 

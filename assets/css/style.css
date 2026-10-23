@@ -697,8 +697,7 @@ em {
 .gallery-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
 }
 
 .gallery-placeholder {
