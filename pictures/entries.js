@@ -6,8 +6,24 @@
 window.pictureEntries = [
 
   {
-    file: 'HealthcareWeekLuxembourg.png',
-    caption: "Healthcare Week Luxembourg - September 2026",
+    file: 'HealthcareWeekLuxembourg-2026.png',
+    caption: "Healthcare Week Luxembourg(HWL) - Luxembourg, September 2026",
+    category: 'Events',
+    alt: '',
+  },
+
+
+    {
+    file: 'QuantomBreakfast-2026.jpg',
+    caption: "Quantom Breakfast - Luxembourg, September 2026",
+    category: 'Events',
+    alt: '',
+  },
+ 
+
+      {
+    file: 'MasterDefense-2026.jpg',
+    caption: "Master's thesis defense - Paris, September 2026",
     category: 'Events',
     alt: '',
   },

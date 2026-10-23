@@ -15,7 +15,7 @@ window.writingEntries = [
     id: 'mikhandam-21-july-2026',
     title: 'میخندم',
     category: 'Prose',
-    date: '21 July 2026',
+    date: 'Paris, 21 July 2026',
     intro: '',
     text: `میخندم
 آنچنان که گویی هیچ اتفاقی نیفتاده است
@@ -36,7 +36,7 @@ window.writingEntries = [
     id: 'rainy-paris-17-may-2026',
     title: 'Rainy Paris',
     category: 'Prose',
-    date: '17 May 2026',
+    date: 'Paris, 17 May 2026',
     intro: '',
     text: `Rainy Paris sometimes feels very strange..
 Something I cannot explain..
@@ -93,7 +93,7 @@ Not of you..`,
     id: 'he-wont-see-tomorrows-sun-11-may-2026',
     title: "He won’t see tomorrow’s sun",
     category: 'Prose',
-    date: '11 May 2026',
+    date: 'Paris, 11 May 2026',
     intro: '',
     text: `They have closed their eyes.
 They do not hear us.
@@ -152,7 +152,7 @@ I only continue.
     id: 'sabze-bahane-ast-20-march-2026',
     title: 'سبزه بهانه است',
     category: 'Prose',
-    date: '20 March 2026',
+    date: 'Paris, 20 March 2026',
     intro: '',
     text: `نوروز
 …میان غم‌هایی بی‌حد
@@ -183,7 +183,7 @@ I only continue.
     id: 'dancing-in-the-fire-16-March-2026',
     title: 'Dancing in the fire',
     category: 'Poem',
-    date: '16 March 2026',
+    date: 'Paris, 16 March 2026',
     intro: '',
     text: `There was a girl
 In January, 2026
@@ -245,7 +245,7 @@ I am Persian.
     id: 'araye-haye-nahanjar-15-march-2026',
     title: 'آرایه های ناهنجار',
     category: 'Poem',
-    date: '15 March 2026',
+    date: 'Paris, 15 March 2026',
     intro: '',
     text: `ای شب‌های سپید
 و ای روزهای سیاه
