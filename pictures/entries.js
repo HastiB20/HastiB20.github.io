@@ -36,12 +36,19 @@ window.pictureEntries = [
     alt: '',
   }, 
 
+            {
+    file: 'ParisChristmas-2026.jpg',
+    caption: "Christmas - Paris, December 2025",
+    category: 'Events',
+    alt: '',
+  },
+
+  
         {
     file: 'WalkingInOberkorn-2025.png',
     caption: "Walking in Oberkorn - Oberkorn, May 2025",
     category: 'Daily Life',
     alt: '',
   },
-
 
 ];
