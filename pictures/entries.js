@@ -23,7 +23,7 @@ window.pictureEntries = [
 
   {
     file: 'HealthcareWeekLuxembourg-2026.png',
-    caption: "Healthcare Week Luxembourg(HWL) - Luxembourg, September 2026",
+    caption: "Healthcare Week Luxembourg (HWL) - Luxembourg, September 2026",
     category: 'Scientific & Academic Events',
     alt: '',
   },
