@@ -46,7 +46,7 @@ window.pictureEntries = [
 
       {
     file: 'MasterDefense-2026.jpg',
-    caption: "Master's thesis defense - Paris, September 2026",
+    caption: "Master's thesis defense - Paris, July 2026",
     category: 'Scientific & Academic Events',
     alt: '',
   },
