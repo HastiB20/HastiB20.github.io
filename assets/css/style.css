@@ -1934,6 +1934,59 @@ h1 em,h2 em {
 }
 
 /* Align the copyright notice along both edges without stretching final lines. */
+.cv-resume h3 {
+  font-size: 32px;
+}
+
+.cv-timeline {
+  margin-left: 6px;
+  padding-left: 25px;
+  border-left: 2px solid var(--line);
+}
+
+.cv-entry {
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.cv-entry:last-child {
+  padding-bottom: 0;
+}
+
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--muted);
+  border: 2px solid var(--paper);
+}
+
+.cv-entry h3 {
+  margin-top: 0;
+}
+
+.cv-resume p,
+.cv-resume li {
+  text-align: justify;
+  text-align-last: start;
+  hyphens: auto;
+}
+
+.cv-entry ul {
+  padding-left: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .cv-resume p,
+  .cv-resume li {
+    text-align: start;
+  }
+}
+
 .copyright-notice > p {
   font-size: 17px;
   text-align: justify;
