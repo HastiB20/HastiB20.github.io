@@ -8,14 +8,14 @@ window.pictureEntries = [
 
            {
     file: 'BrusselDua.jpg',
-    caption: "Travel - Brussels, November 2026",
+    caption: "Traveling - Brussels, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
             {
     file: 'Brusseldua2.jpg',
-    caption: "Travel - Brussels, November 2026",
+    caption: "Traveling - Brussels, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
@@ -23,21 +23,21 @@ window.pictureEntries = [
 
             {
     file: 'AntwerpGare.jpg',
-    caption: "Travel - Antwerp, November 2026",
+    caption: "Traveling - Antwerp, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
             {
     file: 'AntwerpSmile2.jpg',
-    caption: "Travel - Antwerp, November 2026",
+    caption: "Traveling - Antwerp, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
           {
     file: 'AntwerpSmile1.jpg',
-    caption: "Travel - Antwerp, November 2026",
+    caption: "Traveling - Antwerp, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
