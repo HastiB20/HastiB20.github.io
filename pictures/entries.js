@@ -14,7 +14,7 @@ window.pictureEntries = [
   },
 
                {
-    file: '‌BrusselDua.jpg',
+    file: '‌brusseldua2.jpg',
     caption: "Travel - Brussels, November 2026",
     category: 'Personal & Social Events',
     alt: '',
