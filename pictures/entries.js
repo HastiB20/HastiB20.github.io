@@ -14,7 +14,7 @@ window.pictureEntries = [
   },
 
                {
-    file: '‌brusseldua2.jpg',
+    file: '‌Brusseldua2.jpg',
     caption: "Travel - Brussels, November 2026",
     category: 'Personal & Social Events',
     alt: '',
@@ -22,7 +22,7 @@ window.pictureEntries = [
 
 
             {
-    file: '‌antwerpGare.jpg',
+    file: '‌AntwerpGare.jpg',
     caption: "Travel - Antwerp, November 2026",
     category: 'Personal & Social Events',
     alt: '',
@@ -35,31 +35,31 @@ window.pictureEntries = [
     alt: '',
   },
 
-            {
+          {
     file: '‌AntwerpSmile1.jpg',
     caption: "Travel - Antwerp, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
-             {
-    file: '‌luxphotoshoot.jpg',
+           {
+    file: '‌Luxphotoshoot.jpg',
     caption: "Photo Shoot - Bertrange, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
 
-              {
-    file: '‌luxphoto.jpg',
+          {
+    file: '‌Luxphoto.jpg',
     caption: "Photo Shoot - Bertrange, November 2026",
     category: 'Personal & Social Events',
     alt: '',
   },
 
 
-             {
-    file: '‌billiard.jpg',
+           {
+    file: '‌Billiard.jpg',
     caption: "Photo Shoot - Bertrange, November 2026",
     category: 'Personal & Social Events',
     alt: '',
