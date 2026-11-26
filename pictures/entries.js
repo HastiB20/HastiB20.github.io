@@ -7,6 +7,66 @@ window.pictureEntries = [
 
 
            {
+    file: '‌BrusselDua.jpg',
+    caption: "Travel - Brussels, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+               {
+    file: '‌BrusselDua.jpg',
+    caption: "Travel - Brussels, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+
+            {
+    file: '‌antwerpGare.jpg',
+    caption: "Travel - Antwerp, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+            {
+    file: '‌AntwerpSmile2.jpg',
+    caption: "Travel - Antwerp, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+            {
+    file: '‌AntwerpSmile1.jpg',
+    caption: "Travel - Antwerp, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+             {
+    file: '‌luxphotoshoot.jpg',
+    caption: "Photo Shoot - Bertrange, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+
+              {
+    file: '‌luxphoto.jpg',
+    caption: "Photo Shoot - Bertrange, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+
+             {
+    file: '‌billiard.jpg',
+    caption: "Photo Shoot - Bertrange, November 2026",
+    category: 'Personal & Social Events',
+    alt: '',
+  },
+
+
+           {
     file: 'HikingSchifflange1-2026.jpg',
     caption: "Hiking - Schifflange, October 2026",
     category: 'Personal & Social Events',
