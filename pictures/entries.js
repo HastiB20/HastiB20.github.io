@@ -7,7 +7,7 @@ window.pictureEntries = [
 
 
            {
-    file: 'BrusselDua.jpg',
+    file: 'Brusselsdua1.jpg',
     caption: "Travelling - Brussels, November 2026",
     category: 'Personal & Social Events',
     alt: '',
